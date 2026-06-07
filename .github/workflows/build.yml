@@ -44,7 +44,7 @@ jobs:
       run: |
         export ARCH=arm64
         export PATH="$CLANG_PATH/bin:$GCC64_PATH/bin:$GCC32_PATH/bin:$PATH"
-        export KBUILD_BUILD_USER=Manipulator
+        export KBUILD_BUILD_USER=MiDoNaSR
         export KBUILD_BUILD_HOST=LineageOS
         export KBUILD_COMPILER_STRING="$CLANG_PATH/clang"
         export BUILD_DATE=$BUILD_DATE
@@ -64,7 +64,7 @@ jobs:
         
     - name: 📂 Clone Anykernel3 & Zip
       run: |
-        git clone --depth=1 https://github.com/manipvlator/Anykernel3.git -b reforge AnyKernel3
+        git clone --depth=1 https://github.com/MiDoNaSR545/Anykernel3.git AnyKernel3
         cp out/arch/arm64/boot/Image.gz AnyKernel3/Image.gz
         cp out/arch/arm64/boot/dtbo.img AnyKernel3/dtbo.img
         cp out/arch/arm64/boot/dtb.img AnyKernel3/dtb.img
